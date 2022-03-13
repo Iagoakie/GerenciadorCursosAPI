@@ -9,17 +9,17 @@ Desafio Final
 
 • Gostaria de armazenar as seguintes informações:
 
-• Título
+► Título
 
-• Duração
+► Duração
 
-• Status (Previsto, Em Andamento, Concluído)
+► Status (Previsto, Em Andamento, Concluído)
 
-• Qualquer pessoa pode Consultar todos os Cursos cadastrados
+◘ Qualquer pessoa pode Consultar todos os Cursos cadastrados
 
-• Qualquer pessoa pode Consultar os Cursos por Status
+◘ Qualquer pessoa pode Consultar os Cursos por Status
 
-• O Gerente do sistema pode Excluir um Curso
+◘ O Gerente do sistema pode Excluir um Curso
 
 
 • O Gerente e a Secretária podem Atualizar o Status de um Curso
