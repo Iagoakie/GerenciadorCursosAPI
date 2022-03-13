@@ -24,10 +24,10 @@ namespace GerenciadorCursos.Data
 
                 e.Property(p => p.Titulo).HasColumnType("varchar(40)").IsRequired();
 
-                e.Property(p => p.Duracao).HasColumnType("varchar(40)");
+                e.Property(p => p.duracao).HasColumnType("varchar(40)");
 
                 e.Property(p => p.Status).HasColumnType("nvarchar(max)");
-
+                
             });
         }
 

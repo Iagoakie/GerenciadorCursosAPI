@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace GerenciadorCursos.Models
 {
@@ -8,12 +9,14 @@ namespace GerenciadorCursos.Models
         [Key]
         public int Id { get; set; }
 
-
         public string Titulo { get; set; }
-
-        public string Duracao { get; set; }
+       
+        public  string duracao { get; set; }
 
         public StatusEnum Status { get; set; }
+
+
+     
 
     }
 }
