@@ -37,17 +37,13 @@ namespace GerenciadorCursos.Controllers
         }
 
         // GET: api/Cursos/5
-        [HttpGet("{id}")]
-        public IActionResult GetCursosModel(int id)
+        [AllowAnonymous]
+        [HttpGet("Status")]
+        public IActionResult GetCursosModel(StatusEnum Status)
         {
-            var curso = repository.ObterCursosPorId(id);
+            var curso = repository.ObterCursosPorStatus(Status);
 
-            if (curso == null)
-            {
-                return NotFound();
-            }
-
-            return Ok();
+            return Ok(curso);
         }
 
         // PUT: api/Cursos/5

@@ -7,7 +7,7 @@ namespace GerenciadorCursos.Repository
     {
 
         IEnumerable<CursosModel> ObterTodosCursos();
-        CursosModel ObterCursosPorId(int id);
-
+        IEnumerable<CursosModel> ObterCursosPorStatus(StatusEnum Status);
+   
     }
 }

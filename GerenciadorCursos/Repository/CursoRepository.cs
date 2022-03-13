@@ -1,6 +1,5 @@
 ﻿using GerenciadorCursos.Data;
 using GerenciadorCursos.Models;
-using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,18 +14,10 @@ namespace GerenciadorCursos.Repository
             _context = context;
         }
 
-        public CursosModel ObterCursosPorId(int id)
+        public IEnumerable<CursosModel> ObterCursosPorStatus(StatusEnum Status)
         {
 
-            var cursosModel =  _context.CursosModels.Find(id);
-
-            if (cursosModel == null)
-            {
-                return null;
-            }
-
-            return cursosModel;
-
+            return _context.CursosModels.Where((CursosModel course) => course.Status == Status);
 
         }
 

@@ -10,6 +10,7 @@ namespace GerenciadorCursos.Data
         }
 
         public DbSet<CursosModel> CursosModels { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,11 +22,11 @@ namespace GerenciadorCursos.Data
 
                 e.HasKey(p => p.Id);
 
-                e.Property(f => f.Titulo).HasColumnType("varchar(40)").IsRequired();
+                e.Property(p => p.Titulo).HasColumnType("varchar(40)").IsRequired();
 
-                e.Property(g => g.Duracao).HasColumnType("varchar(40)");
+                e.Property(p => p.Duracao).HasColumnType("varchar(40)");
 
-                e.Property(h => h.Status).HasColumnType("nvarchar(max)");
+                e.Property(p => p.Status).HasColumnType("nvarchar(max)");
 
             });
         }
